@@ -1,0 +1,10 @@
+<h1>correspondance mois/saison</h1>
+<input type="number" [(ngModel)]="val"/>
+<br/>
+
+<span [ngSwitch]="true">
+<span *ngSwitchCase=" val==12 || val==1 || val==2">Le mois {{val}} est en Automne </span>
+<span *ngSwitchCase=" val==3 || val==4 || val==5">Le mois {{val}} est en Printemps </span>
+<span *ngSwitchCase=" val==6 || val==7 || val==8">Le mois {{val}} est en été </span>
+<span *ngSwitchCase=" val==9 || val==10 || val==11">Le mois {{val}} est en Hiver </span>
+</span>

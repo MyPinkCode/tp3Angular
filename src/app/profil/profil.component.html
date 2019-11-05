@@ -1,0 +1,11 @@
+<h1>liste des profils</h1>
+<ul>
+  <li *ngFor="let t of profils">{{t}}</li>
+</ul>
+<p>
+  choix d'un profil
+  <select [(ngModel)]="profil">
+    <option *ngFor="let t of profils" value="{{t}}">{{t}}</option>
+  </select>
+  le profil selectione est : {{profil}}
+</p>
